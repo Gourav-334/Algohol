@@ -1,0 +1,25 @@
+Algohol (Version: 1.0.0)
+------------------------
+
+CONFIGURATION AND CUSTOMIZATION
+-------------------------------
+
+Consider following points before/when customizing:-
+
+-> In namespace data_structures, the private section of each class contains variables used for counter, storing temporary variables, some pointers pointing to structures etc.
+
+-> Rest of the code under public section are expected to be optimized.
+
+-> Some identifiers may not represent the original working/role of it.
+
+-> Codes under public section are fine, and easily customizable.
+
+-> When disassembling anything from private section, be careful considering its effect on rest of the code.
+
+-> No restriction on changes to any extent, but making changes with codes in private section is not advised to beginners.
+
+-> For header file used for creating dynamic link library, the token used as exchange for __declspec(dllexport) & __declspec(dllimport) is DLL.
+
+-> The DLL token is used only in classes, as using them in functions raised errors saying functions are behaving as __declspec(dllexport) functions.
+
+-> Try not modifying the macro tokens used for avoiding multiple imports from taking place, specially try not to replace them with "#pragma once" as it is not always portable.

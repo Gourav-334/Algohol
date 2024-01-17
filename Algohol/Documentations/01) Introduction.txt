@@ -1,0 +1,28 @@
+Algohol (Version: 1.0.0)
+------------------------
+
+INTRODUCTION
+------------
+
+Hello and welcome everyone in C/C++ programming community! I am the creator of "Algohol" library, which contains various functionalities related to "Data structures & algorithms" for C/C++ (currently only for Windows users).
+
+
+Purpose of creating it:-
+
+-> Helping DSA with C/C++ beginners understand workings in DSA.
+-> Providing C/C++ dev community a powerful tool for their applications using DSA.
+-> Give full access to source code reverse engineering to enthusiasts.
+-> Combined learning outcome for me and its users.
+
+
+Main features:-
+
+-> Implementation of data structures like "binary search trees", "linked lists", "dynamic stacks" & "dynamic queues".
+-> Implementation of searching algorithms like "linear search" & "binary search".
+-> Implementation of sorting algorithms like "bubble sort", "bucket sort", "insertion sort", "merge sort", "quick sort", "radix sort", "selection sort" & "shell sort".
+
+
+Why use Algohol?
+----------------
+
+It serves as a very powerful and intuitive tool for budding software engineers using C/C++ regularly. Not only it includes many DSA related functionalities, but proper security measures to avoid confrontation with errors or memory leakages common to low-level programming.
