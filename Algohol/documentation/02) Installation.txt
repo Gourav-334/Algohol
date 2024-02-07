@@ -21,3 +21,4 @@ Precaution!
 
 -> Make sure that you have the source & header file in the same directory of the user code using it.
 -> Also make sure that library file (.lib for static & .dll for dynamic) are in the same directory of the executable (.exe) files using it.
+-> algohol.dll & algohol.lib are the combined binary and static file (having attributes of all available source files).
