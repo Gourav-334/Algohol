@@ -1,7 +1,0 @@
-Algohol (Version: 1.0.0)
-------------------------
-
-TROUBLESHOOTING
----------------
-
-Right now no issues with troubleshoots.

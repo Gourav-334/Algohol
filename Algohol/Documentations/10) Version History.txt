@@ -1,9 +1,0 @@
-Algohol (Version: 1.0.0)
-------------------------
-
-VERSION HISTORY
----------------
-
-Newest to oldest:-
-
--> 1.0.0	(January 17, 2024)
