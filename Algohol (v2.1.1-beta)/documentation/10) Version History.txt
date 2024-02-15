@@ -6,6 +6,11 @@ VERSION HISTORY
 
 Newest to oldest with "What's new?":-
 
+v2.1.1-beta	(February 15, 2024)
+-----------------------------------
+-> Fatal bug fixed (variable a,b were swapped in equation).
+
+
 v2.1.0-beta	(February 15, 2024)
 -----------------------------------
 -> New library "ml" for "Machine Learning" is added as beta version.
