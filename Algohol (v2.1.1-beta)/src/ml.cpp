@@ -138,9 +138,10 @@ void regressions::SimLinReg::find(float x, float y)
 //Predicting the next outcome as per available dataset.
 int regressions::SimLinReg::predict(char axis, float input)
 {
+	sum_x = 0; sum_y = 0; sum_xy = 0; sum_x_s = 0; sum_y_s = 0;
+
 	while (trav->next!=NULL)
 	{
-		sum_x = 0; sum_y = 0; sum_xy = 0; sum_x_s = 0; sum_y_s = 0;
 		sum_x += trav -> x; sum_y += trav -> y;
 		sum_xy += (trav -> x)*(trav -> y);
 		sum_x_s += (trav -> x)*(trav -> x);
@@ -156,8 +157,8 @@ int regressions::SimLinReg::predict(char axis, float input)
 
 	trav = head;
 
-	a = ((n*sum_xy)-(sum_x*sum_y))/((n*sum_x_s)-(sum_x*sum_x));
-	b = (sum_y-(b*sum_x))/n;
+	b = ((n*sum_xy)-(sum_x*sum_y))/((n*sum_x_s)-(sum_x*sum_x));
+	a = (sum_y-(b*sum_x))/n;
 
 	if (axis=='x')
 	{
