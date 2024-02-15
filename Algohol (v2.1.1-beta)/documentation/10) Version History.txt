@@ -1,0 +1,28 @@
+Algohol (Version: 2.1.0-beta)
+-----------------------------
+
+VERSION HISTORY
+---------------
+
+Newest to oldest with "What's new?":-
+
+v2.1.0-beta	(February 15, 2024)
+-----------------------------------
+-> New library "ml" for "Machine Learning" is added as beta version.
+-> Folder "source" has been renamed as "src".
+-> Documentation mistakes have been corrected.
+
+
+v2.0.0		(February 07, 2024)
+-----------------------------------
+-> Header, source and namespace names have been shortened.
+-> Folders are better sorted.
+-> Header file(s) now contain(s) only prototypes.
+-> Seperate source files are given.
+-> Static and shared libraries created through object files.
+-> Object file(s) are now available to users.
+
+
+v1.0.0		(January 17, 2024)
+----------------------------------
+-> Inception day.

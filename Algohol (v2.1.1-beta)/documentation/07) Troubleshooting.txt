@@ -1,0 +1,7 @@
+Algohol (Version: 2.1.0-beta)
+-----------------------------
+
+TROUBLESHOOTING
+---------------
+
+Right now no issues with troubleshoots.

@@ -1,0 +1,23 @@
+Algohol (Version: 2.1.0-beta)
+-----------------------------
+
+INSTALLATION
+------------
+
+The installation steps are very simple, just follow them without skipping any instruction:-
+
+
+Step 1: Decide whether you want to use a static or shared/dynamic version of the library.
+
+Step 2: As per the decision, copy files from folder "bin" and corresponding header from "include\shared" if you prefer to use shared/dynamic version of the library. Or for users preferring static version, copy files from "lib" and "include\static", source file being common.
+
+Step 3: Paste the copied files to the same directory where your user code which have to use the library resides in.
+
+Step 4: Open your user code file, and now you can include the header file and use its namespaces.
+
+
+Precaution!
+-----------
+
+-> Make sure that you have the source & header file in the same directory of the user code using it.
+-> Also make sure that library file (.lib for static & .dll for dynamic) are in the same directory of the executable (.exe) files using it.
