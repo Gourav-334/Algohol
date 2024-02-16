@@ -1,0 +1,24 @@
+Algohol (Version: 2.2.0)
+------------------------
+
+CONTRIBUTING
+------------
+
+It would be extremely helpful for every developer using this library if someone contributes. I tried to initiate it from my side with goal of achieving a great learning outcome and even a great milestone. If someone contributes to this open source project, I appreciate him/her.
+
+
+Areas expected for improvement:-
+
+-> The time complexity of the code, specially the binary search tree.
+
+-> The space complexity of the code, using minimal variables and eliminating unwanted/unsused ones.
+
+-> Making the code cleaner.
+
+-> Providing meaningful and easy instructions through comments to the user.
+
+-> Enabling macro SHARED (for __declspec) to be used on generic functions present.
+
+-> Enabling direct inclusion of header file, containing prototypes.
+
+-> Object, static and shared files for MacOS & Linux users.

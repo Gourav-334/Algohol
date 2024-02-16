@@ -1,0 +1,105 @@
+MAKE FILE FPTR
+OPEN FILE IN "RB"
+
+FLOAT BUFF1[32]
+B1 = 0
+FLOAT BUFF2[32]
+B2 = 0
+BUFFER = 1
+DOT = FALSE
+
+PAIR[2]
+
+CURRENT
+
+IF FPTR IS POINTING NULL:
+	THROW ERROR
+
+ELSE IF FPTR IS NOT POINTING NULL:
+	WHILE EOF NOT REACHED:
+
+		CURRENT = CURRENT CHAR
+
+		SWICH (BUFFER):
+			CASE 1:
+				IF CURRENT = " ":
+					BREAK
+
+				ELSE IF CURRENT = ",":
+					BUFF1[B1] = '\n'
+					PAIR[0] = ATOF(BUFF1)
+					B1 = 0
+					BUFFER = 2
+					DOT = FALSE
+					BREAK
+
+				ELSE IF CURRENT='.' AND DOT=FALSE:
+					BUFF1[B1] = CURRENT
+					DOT = TRUE
+					B1++
+					BREAK
+
+				ELSE IF (CURRENT!='0' OR CURRENT !='.' AND ATOF(CURRENT)=0) OR (CURRENT='.' AND DOT=TRUE):
+					THROW ERROR
+					BREAK
+
+				ELSE:
+					BUFF1[B1] = CURRENT
+					B1++
+					BREAK
+
+			CASE 2:
+				IF CURRENT = " " OR "\":
+					BREAK
+
+				ELSE IF CURRENT = "n" OR FEOF=0:
+					BUFF2[B2] = '\n'
+					PAIR[1] = ATOF(BUFF2)
+					THIS.ADD(PAIR[0],PAIR[1])
+					B2 = 0
+					BUFFER = 1
+					DOT = FALSE
+					BREAK
+
+				ELSE IF CURRENT='.' AND DOT=FALSE:
+					BUFF2[B2] = CURRENT
+					DOT = TRUE
+					B2++
+					BREAK
+
+				ELSE IF (CURRENT!='0' OR CURRENT !='.' AND ATOF(CURRENT)=0) OR (CURRENT='.' AND DOT=TRUE):
+					THROW ERROR
+					BREAK
+
+				ELSE:
+					BUFF2[B2] = CURRENT
+					B2++
+					BREAK
+
+ELSE:
+	THROW ERROR
+
+FILE CLOSE
+___________________________________________________________________________________________________________________________
+
+Other changes made:-
+
+1) Adding "import" function to header files.
+2) Adding f at the end of floats.
+___________________________________________________________________________________________________________________________
+
+CREATE FILE POINTER
+OPEN THE FILE WITH "A" MODE
+
+WHILE NEXT IS NOT NULL:
+	APPEND X TO FILE
+	APPEND ","
+	APPEND Y TO FILE
+	CHANGE THE LINE
+
+APPEND X TO FILE
+APPEND ","
+APPEND Y TO FILE
+CHANGE THE LINE
+
+RETURN TRAV TO HEAD
