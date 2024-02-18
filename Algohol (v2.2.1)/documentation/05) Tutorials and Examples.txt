@@ -1,0 +1,237 @@
+Algohol (Version: 2.2.1)
+------------------------
+
+TUTORIALS AND EXAMPLES
+----------------------
+
+Importing library
+-----------------
+
+Along with other #include statements, write:-
+#include "mylib.cpp"	//replace "mylib" with the source file you are interested in.
+
+
+Including namespace(s)
+----------------------
+
+After all the initial #include statements, write:
+using namespace namespace_name;		//replace "namespace_name" with the namespace you are interested in.
+
+For example:- To include structures namespace, write:
+using namespace structutres;	//(you can add multiple namespaces with each seperate lines like these)
+
+
+dsa
+---
+Namespace structures
+--------------------
+
+Class BST
+---------
+
+-> Creating a object:			BST object_name;	//syntax
+-> Example:				BST tree;	//example code
+
+-> Inserting a node:			object_name.insert(value);	//syntax
+-> Example:				tree.insert(5);	//example code
+
+-> Removing a node:			object_name.remove(value);	//syntax
+-> Example:				tree.remove(5);	//example code
+
+-> Searching a node:			object_name.search(value);	//syntax
+-> Example:				tree.search(5);	//example code
+
+
+Class LinkedList
+----------------
+
+-> Creating a object:			LinkedList object_name;	//syntax
+-> Example:				LinkedList ll;	//example code
+
+-> Creating a linked list:		object_name.create(no_of_nodes);	//syntax
+-> Example:				ll.create(4);	//example code
+
+-> Inserting a node:			object_name.insert(value);	//syntax
+-> Example:				ll.insert(5);	//example code
+
+-> Removing a node:			object_name.remove(value);	//syntax
+-> Example:				ll.remove(5);	//example code
+
+-> Displaying structure:		object_name.display();	//syntax
+-> Example:				ll.display();	//example code
+
+
+Class Stack
+-----------
+
+-> Creating a object:			Stack object_name;	//syntax
+-> Example:				Stack s;	//example code
+
+-> Pushing to stack:			object_name.push(value);	//syntax
+-> Example:				s.push(5);	//example code
+
+-> Popping from stack:			object_name.pop();	//syntax
+-> Example:				s.pop();	//example code
+
+-> Peeking last element:		object_name.peek();	//syntax
+-> Example:				s.peek();	//example code
+
+-> Displaying structure:		object_name.display();	//syntax
+-> Example:				s.display();	//example code
+
+
+Class Queue
+-----------
+
+-> Creating a object:			Queue object_name;	//syntax
+-> Example:				Queue q;	//example code
+
+-> Queuing to queue:			object_name.queue(value);	//syntax
+-> Example:				q.queue(5);	//example code
+
+-> Dequeuing from queue:		object_name.dequeue();	//syntax
+-> Example:				q.dequeue();	//example code
+
+-> Peeking last element:		object_name.peek();	//syntax
+-> Example:				q.peek();	//example code
+
+-> Displaying structure:		object_name.display();	//syntax
+-> Example:				q.display();	//example code
+
+
+Namespace search
+----------------
+
+Linear searching
+----------------
+
+-> Syntax:				linSearch(element_to_search, array_name, size_of_array);
+-> Code example:			linSearch(23, arr, 6);
+
+
+Binary searching
+----------------
+
+-> Syntax:				binSearch(element_to_search, array_name, size_of_array);
+-> Code example:			binSearch(23,arr, 6);
+
+
+Namespace sort
+--------------
+
+Bubble sorting
+--------------
+
+-> Syntax:				bubble(array_name, size_of_array);
+-> Code example:			bubble(arr, 7);
+
+
+Bucket sorting
+--------------
+
+-> Syntax:				bucket(array_name, size_of_array);
+-> Code example:			bucket(arr, 9);
+
+
+Insertion sorting
+-----------------
+
+-> Syntax:				insertion(array_name, size_of_array);
+-> Code example:			insertion(arr, 12);
+
+
+Merge sorting
+-------------
+
+-> Syntax:				merge(array_name, size_of_array);
+-> Code example:			merge(arr, 55);
+
+
+Quick sorting
+-------------
+
+-> Syntax:				quick(array_name, size_of_array);
+-> Code example:			quick(arr, 2);
+
+
+Radix sorting
+-------------
+
+-> Syntax:				radix(array_name, size_of_array);
+-> Code example:			radix(arr, 44);
+
+
+Selection sorting
+-----------------
+
+-> Syntax:				selection(array_name, size_of_array);
+-> Code example:			selection(arr, 13);
+
+
+Shell sorting
+-------------
+
+-> Syntax:				shell(array_name, size_of_array);
+-> Code example:			shell(arr, 60);
+
+
+ml
+--
+Namespace regressions
+---------------------
+
+class SimLinReg
+---------------
+
+-> Creating a object:			SimLinReg object_name;	//syntax
+-> Example:				SimLinReg slr;	//example code
+
+-> Inserting data:			object_name.add(x_axis_variable_value, y_axis_variable_value)	//syntax
+-> Code:				slr.add(7,56);	//example code
+
+-> Removing data:			object_name.remove(x_axis_variable_value, y_axis_variable_value)	//syntax
+-> Code:				slr.remove(7,56);	//example code
+
+-> Finding data:			object_name.find(x_axis_variable_value, y_axis_variable_value)	//syntax
+-> Code:				slr.find(7,56);	//example code
+
+-> Predicting outcome:			object_name.predict(which_axis_value_to_predict, other_axis_value)	//syntax
+-> Code:				slr.predict('x',87);	//example code
+
+-> Importing data from file:		object_name.import(name_of_file)	//syntax
+-> Code:				slr.import("filename.txt")	//you can even write file location instead
+
+/* Data must be in format:-
+
+x1, y1
+x2, y2
+x3, y3
+
+Means:-
+
+712.21, 89.07
+12.314, 789.4445
+9012.24, 65.736	*/
+
+
+/* Bizzare data format:-
+
+x1,y1
+x2,   y2
+
+  x3   , y3
+x4  ,y4
+
+4123.23,8.1213
+3.536,   872.343
+
+  723.23   , 98.1
+65.2323  ,8812.0907	*/
+
+//Data above is written in a very bizzare manner, but Algohol's "import" method has smart detection system for it.
+
+-> Extracts data to file:		object_name.extract(name_of_file)	//syntax
+-> Code:				slr.extract("filename.txt")	//you can even write file location instead
+
+
+/*After being done with your project, make sure that you link the library (static/shared) with your user program correctly, for creating final executable.*/
