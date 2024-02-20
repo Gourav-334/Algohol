@@ -1,10 +1,15 @@
-Algohol (Version: 2.2.1)
+Algohol (Version: 2.2.2)
 ------------------------
 
 VERSION HISTORY
 ---------------
 
 Newest to oldest with "What's new?":-
+
+v2.2.2		(February 20, 2024)
+-----------------------------------
+-> Linux versions for all static files are added (dsa->sort->quick() is commented).
+
 
 v2.2.1		(February 18, 2024)
 -----------------------------------

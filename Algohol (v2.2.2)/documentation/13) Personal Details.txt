@@ -1,4 +1,4 @@
-Algohol (Version: 2.2.1)
+Algohol (Version: 2.2.2)
 ------------------------
 
 PERSONAL DETAILS
