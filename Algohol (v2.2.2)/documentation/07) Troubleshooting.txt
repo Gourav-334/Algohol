@@ -1,0 +1,7 @@
+Algohol (Version: 2.2.2)
+------------------------
+
+TROUBLESHOOTING
+---------------
+
+Right now no issues with troubleshoots.

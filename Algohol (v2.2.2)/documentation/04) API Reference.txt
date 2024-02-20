@@ -1,0 +1,84 @@
+Algohol (Version: 2.2.2)
+------------------------
+
+API REFERENCE
+-------------
+
+Now we will discuss how the classes and functions are to be used, and what a user must keep in mind.
+
+
+dsa
+---
+
+Namespace structures
+--------------------
+
+-> Function "void insert(int input)" (in all classes):
+	-> Parameter input is the argument provided by the user, and will be inserted in the structure at an appropriate 	place.
+
+-> Function "void remove(int input)" (in all classes):
+	-> Parameter input is the value of the node to be removed from the structure & freed from the memory space.
+
+-> Function "void search(int input)" (in class BST):
+	-> Parameter input is the value to be searched in the binary search tree, and tell whether in exists or not.
+
+-> Function "void create(int n)" (in class LinkedList):
+	-> Parameter n is the number of nodes to be created, and user gets an interface in the console for typing values for 	the nodes.
+
+-> Function "void display()" (in LinkedList, Stack, Queu): Displays the whole structure (every member struct contains) of each node.
+
+-> Function "void push(int input)" (in class Stack):
+	-> Parameter input is the value user will provide for a node for pushing it to the stack.
+
+-> Function "void pop(int input)" (in class Stack):
+	-> Parameter input is the value user will provide for popping a node from the stack.
+
+-> Function "void peek()" (in class Stack, Queue): Visits the last element/node in the structure.
+
+-> Function "void queue(int input)" (in class Queue):
+	-> Parameter input is the value user will provide for a node for queuing it to the queue.
+
+-> Function "void dequeue(int input)" (in class Queue):
+	-> Parameter input is the value user will provide for dequeuing a node from the queue.
+
+
+Namespace search
+----------------
+
+-> Function "T linSearch(T f, T *arr, int n)" & "T binSearch(T f, T *arr, int n)":
+	-> Parameter f is the element to be searched.
+	-> Parameter *arr is the pointer to the first element of the array, or simply the name of array (excluding 	paranthesis).
+	-> Parameter n is the size of the array user is passing.
+
+
+Namespace sort
+--------------
+
+-> Function "void bubble(T arr[], int n)", "void bucket(T arr[], int n)", "void insertion(T arr[], int n)", "void merge(T arr[], int n)", "void quick(T arr[], int n, int low=0, int high=NULL, bool flag=false)", "void radix(T arr[], int n)", "void selection(T arr[], int n)" & "void shell(T arr[], int n)":
+
+	-> Parameter arr[] is the pointer to the first element of the array, or simply the name of array (excluding 	paranthesis).
+	-> Parameter n is the size of the array user is passing.
+
+-> Function "void quick(int arr[], int n, int low=0, int high=NULL, bool flag=false)"
+	-> Parameter low represents the real index number of the first element of array in currently running recursion.
+	-> Parameter high similarly refers to index number of the last element in that array.
+	-> Parameter flag is just a flag as the name says, that a user is advised not to mess with.
+
+
+ml
+--
+Namespace regressions
+---------------------
+-> Function "void add(int x, int y)", "void remove(int x, int y)", "void find(int x, int y)" (in class SimLinReg):
+	-> Parameter x is the variable on x-axis.
+	-> Parameter y is the variable on y-axis.
+
+-> Function "int predict(char axis, int input)" (in class SimLinReg)
+	-> Parameter axis tells which axis value we want to predict.
+	-> Parameter input is the value of another axis that user has.
+
+-> Function "void import(char *file)", "void extract(char *file)":
+	-> Parameter file is the name of the file provided by the user.
+
+
+*HIGHLY RECOMMENDED TO READ "05) Tutorials and Examples" FOR MORE CLARITY OVER HOW TO USE A PARTICULAR CLASS OR FUNCTION.
