@@ -1,0 +1,14 @@
+Extra additions to Algohol 3
+----------------------------
+
+dsa
+---
+-> BST node deletion safety for non-existing node.
+-> Debug binSearch()
+
+ml
+--
+-> SimLinReg constructor.
+-> SimLinReg destructor.
+-> SimLinReg import function.
+-> SimLinReg extract function.
